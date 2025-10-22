@@ -1,0 +1,128 @@
+<!--
+index.html
+Assignment: Pair Project: Sign Up Form
+Project worked on by: Alex Balan, Malcolm Burns
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GR Sign up Form</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Green River Application For Student Help</h1>
+    <div id="information">
+        <img src="https://www.waterford.org/wp-content/uploads/2019/02/Webp.net-resizeimage-e1549300717380.png"
+            alt="helping with homework" width="360">
+
+        <h2>What is Student Help?</h2>
+        <ul>
+            <li>
+                <p>Help different students with their homework.</p>
+            </li>
+            <li>
+                <p>Welcome new students to college.</p>
+            </li>
+            <li>
+                <p>Help with many different campus events.</p>
+            </li>
+            <li>
+                <p>Lead in Group study sessions / Zoom sessions.</p>
+            </li>
+        </ul>
+    </div>
+
+    <div class="spacer"></div>
+
+    <form id="signupForm"
+        action="https://script.google.com/macros/s/AKfycbz6cewkwC6P68-qotOokhBb_v1Zxr3aozRItX-rFramd4p_7R3XzwHLj7o1mN-6Okez/exec"
+        method="post">
+
+
+        <h2>Apply now!</h2>
+
+        <div>
+            <label>Are you a current student at Green River College located in Auburn?</label><br>
+            <input type="radio" id="yes" name="currentStudent" value="yes" required>
+            <label for="yes">Yes</label>
+
+
+            <input type="radio" id="no" name="currentStudent" value="no" required>
+            <label for="no">No</label>
+        </div>
+
+
+
+        <div>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="fullName" required>
+        </div>
+
+        <div>
+            <label for="email">Email address:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+
+        <div>
+            <label for="hours">Hours per week available: </label>
+            <input type="number" id="hours" name="hoursWeekly" required>
+        </div>
+
+
+        <div>
+            <label for="role">Available Roles:</label>
+            <select id="role" name="preferredRole">
+                <option value="math">Math Tutor</option>
+                <option value="event">Event Specialist Helper</option>
+                <option value="welcomer">Welcomer</option>
+            </select>
+        </div>
+
+
+
+        <div>
+            <label>Availability: </label><br>
+            <input type="checkbox" id="am" name="availability" value="morning">
+            <label for="am">Morning</label>
+
+            <input type="checkbox" id="pm1" name="availability" value="afternoon">
+            <label for="pm1">Afternoon</label>
+
+            <input type="checkbox" id="pm2" name="availability" value="evening">
+            <label for="pm2">Evening</label>
+
+            <p class="asterisk">*no checkboxes assumes none is applicable.</p>
+        </div>
+
+        <div>
+            <label for="start">Earliest Start Date Possible: </label>
+            <input type="date" id="start" name="startDate" required>
+        </div>
+
+        <div>
+            <label>Do you prefer In-Person or Zoom?</label><br>
+
+            <input type="radio" id="modeZoom" name="sessionMode" value="zoom" required>
+            <label for="modeZoom">Zoom</label>
+
+            <input type="radio" id="modeInPerson" name="sessionMode" value="in-person" required>
+            <label for="modeInPerson">In-person</label>
+
+            <input type="radio" id="modeAny" name="sessionMode" value="any" required>
+            <label for="modeAny">No preference</label>
+        </div>
+
+        <div>
+            <button type="submit">Submit!</button>
+        </div>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+/*
+style.css
+Assignment: Pair Project: Sign Up Form
+Project worked on by: Alex Balan, Malcolm Burns
+*/
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: honeydew;
+}
+
+h1 {
+    color: white;
+    background-color: green;
+    padding: 3px;
+    text-indent: 16px;
+}
+
+h2 {
+    color: green;
+    text-decoration: underline;
+    margin-top: 4px;
+}
+
+.spacer {
+    height: 1em;
+}
+
+
+ul {
+    list-style: square;
+    color: green;
+}
+
+ul li p{
+    color: black;
+    font-weight: 100;
+}
+
+form div {
+    font-weight: 100;
+    margin-top: 8px;
+    margin-left: 32px;
+}
+
+.asterisk {
+    margin-top: 4px;
+    color: darkred;
+    font-size: smaller;
+    font-family: 'Times New Roman';
+}
+
+#information, #signupForm {
+    background-color: beige;
+    border: 3px solid rgb(22, 58, 21);
+    box-shadow: 4px 4px 4px 4px rgb(134, 172, 134);
+    padding: 16px;
+    margin-top: 16px;
+    margin-left: 64px;
+    margin-right: 64px;
+}
+
+input{
+    border: 2px solid rgb(22, 58, 21);
+    border-radius: 4px;
+}
+
+img {
+    border: 3px solid rgb(22, 58, 21);
+}
